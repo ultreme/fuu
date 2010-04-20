@@ -1,18 +1,16 @@
-"FR": {
-
+{
+    "FR": {
       "prefix"	: "Espece de",
-      "link"	: {"de", ", retourne dans ta grotte"},
-
+      "link"	: ["de", ", retourne dans ta grotte"],
       "man"	: {
-            "name"	: {"con", "autiste", "linuxien", "raton-laveur"}, 
-	    "prefix"	: {"gros", "con", "moche"},
-	    "suffix"	: {"vert", "orange", "communiste"}
+            "name"	: ["con", "autiste", "linuxien", "raton-laveur"], 
+	    "prefix"	: ["gros", "con", "moche"],
+	    "suffix"	: ["vert", "orange", "communiste"]
       },
-
       "woman": {
-      	    "name"	: {"conne", "autiste", "vache"},
-	    "prefix"	: {"grosse", "conne", "moche"},
-	    "suffix"	: {"verte", "orange", "communiste"}	    
+	  "name"	: ["conne", "autiste", "vache"],
+	    "prefix"	: ["grosse", "conne", "moche"],
+	    "suffix"	: ["verte", "orange", "communiste"]
       }
-
+    }
 }
