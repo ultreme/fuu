@@ -13,7 +13,7 @@ all: 	$(OBJS)
 	$(CC) $(OBJS) -o $(NAME) $(LDFLAGS)
 
 clean:
-	$(RM) $(OBJS)
+	$(RM) $(OBJS) *.core
 
 fclean:	clean
 	$(RM) $(NAME)
