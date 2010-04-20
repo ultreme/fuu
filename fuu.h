@@ -5,7 +5,7 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Tue Apr 20 13:16:54 2010 sebastien rannou
-** Last update Tue Apr 20 15:15:53 2010 sebastien rannou
+** Last update Tue Apr 20 23:35:33 2010 sebastien rannou
 */
 
 #ifndef _FUU_H_
@@ -22,6 +22,7 @@ enum fuustrength { STRENGTH_TINY, STRENGTH_MEDIUM, STRENGTH_STRONG };
 
 struct fuu {
 	char lang[32];
+	char gender[32];
 	enum fuustrength strength;
 	struct json_object *jo_dictionnary;
 };
