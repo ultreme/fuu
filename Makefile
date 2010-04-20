@@ -1,9 +1,9 @@
-NAME 	= insultator
+NAME 	= fuu
 CC	= gcc
 RM	= rm -f
 CFLAGS	= -W -Wall -pedantic -ansi -Wshadow -Werror -O3
 
-SRCS	= insultator.c
+SRCS	= fuu.c
 OBJS	= $(SRCS:.c=.o)
 
 # Rules
