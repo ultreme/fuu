@@ -4,9 +4,10 @@
       "prefix"	: "Espece",
       "link"	: "de",
       "man"	: {
-            "name"	: ["con", "autiste", "linuxien", "raton-laveur"], 
-	    "prefix"	: ["gros", "con", "moche"],
-	    "suffix"	: ["vert", "orange", "communiste"]
+            "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux", "enflure"], 
+	    "prefix"	: ["gros", "con de", "moche", "fils de"],
+	    "suffix"	: ["vert", "orange", "communiste", "capitaliste",
+	     		   "gaulliste", "jaune", "bleu", "marron", "sale", "obese"]
       },
       "woman": {
 	  "name"	: ["conne", "autiste", "vache"],

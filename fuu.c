@@ -5,7 +5,7 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Tue Apr 20 12:53:11 2010 sebastien rannou
-** Last update Wed Apr 21 11:27:23 2010 sebastien rannou
+** Last update Wed Apr 21 11:46:09 2010 sebastien rannou
 */
 
 #include <sys/types.h>
@@ -59,7 +59,7 @@ get_nb_sufix(void)
 {
 	int		res;
 
-	res = 1 + rand() % 3;
+	res = 1 + rand() % 2;
 	return res;
 }
 
@@ -68,7 +68,7 @@ get_nb_prefix(void)
 {
 	int		res;
 
-	res = 1 + rand() % 3;
+	res = 1 + rand() % 2;
 	return res;
 }
 
