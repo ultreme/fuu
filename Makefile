@@ -4,7 +4,7 @@ RM	= rm -f
 CFLAGS	= -W -Wall -pedantic -ansi -Wshadow -Werror -g -I/usr/local/include
 LDFLAGS	= -L/usr/local/lib -ljson
 
-SRCS	= fuu.c
+SRCS	= fuu.c db.c
 OBJS	= $(SRCS:.c=.o)
 
 # Rules

@@ -1,8 +1,8 @@
 {
 
     "FR": {
-      "prefix"	: "Espece de",
-      "link"	: ["de", ", retourne dans ta grotte"],
+      "prefix"	: "Espece",
+      "link"	: "de",
       "man"	: {
             "name"	: ["con", "autiste", "linuxien", "raton-laveur"], 
 	    "prefix"	: ["gros", "con", "moche"],
