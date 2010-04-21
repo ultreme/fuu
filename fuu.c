@@ -5,7 +5,7 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Tue Apr 20 12:53:11 2010 sebastien rannou
-** Last update Wed Apr 21 11:46:09 2010 sebastien rannou
+** Last update Wed Apr 21 21:25:00 2010 sebastien rannou
 */
 
 #include <sys/types.h>
@@ -34,18 +34,19 @@ get_nb_names(void)
 {
 	int		res;
 
+	res = 1;
 	switch (fu_main.strength) {
 	case STRENGTH_TINY:
-		res = rand() % 5;
+		res += rand() % 5;
 		break;
 	case STRENGTH_MEDIUM:
-		res = rand() % 15;
+		res += rand() % 15;
 		break;
 	case STRENGTH_STRONG:
-		res = rand() % 30;
+		res += rand() % 30;
 		break;
 	case STRENGTH_ULTIMATE:
-		res = rand() % 60;
+		res += rand() % 60;
 		break;
 	default:
 		usage();
