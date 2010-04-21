@@ -3,17 +3,36 @@
     "FR": {
       "prefix"	: "Espece",
       "link"	: "de",
+
       "man"	: {
-            "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux", "enflure"], 
-	    "prefix"	: ["gros", "con de", "moche", "fils de"],
-	    "suffix"	: ["vert", "orange", "communiste", "capitaliste",
-	     		   "gaulliste", "jaune", "bleu", "marron", "sale", "obese"]
+            "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux",
+	    		   "enflure", "hamster", "branloman", "chuck norris",
+			   "morbak", "jesus", "jedi", "haricot", "poireau"], 
+	    "prefix"	: ["gros", "con de", "moche", "fils de", "ptit", 
+	    		   "bite de", "crouton de", "foutre de", "poil de",
+			   "marchand de", "suceur de", "mangeur de", 
+			   "buveur de", "dealer de",  "fabriquant de",
+			   "rongeur de", "voleur de"],
+	    "suffix"	: ["vert", "orange", "communiste", "capitaliste", 
+	    		   "immonde", "gaulliste", "jaune", "bleu", "marron",
+			   "sale", "obese", "infecte", "poilu", "puant", 
+			   "vegetarien", "pederaste", "vegetatif", 
+			   "neandertalien", "de nazareth"]
       },
-      "woman": {
-	  "name"	: ["conne", "autiste", "vache"],
-	    "prefix"	: ["grosse", "conne", "moche"],
-	    "suffix"	: ["verte", "orange", "communiste"]
+
+      "woman"	: {
+      	    "name"	: ["conne", "autiste", "vache", "louloute", "tache",
+	    		   "punaise", "mamie", "pomme-de-terre", "moule",
+			    "raclure", "ordure"],
+	    "prefix"	: ["grosse", "conne", "moche", "immonde", "ptite", 
+	    		   "bite de", "crouton de", "foutre de", "poil de",
+			   "marchande de", "suceuse de", "mangeuse de",
+			   "buveuse de", "dealeuse de", "rongeuse de", 
+			   "voleuse de"],
+	    "suffix"	: ["verte", "orange", "communiste", "poilue", "puante",
+	    		   "vegetarienne", "moche", "neandertalienne"]
       }
+
     }
 
 }
