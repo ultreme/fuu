@@ -5,7 +5,7 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Tue Apr 20 12:53:11 2010 sebastien rannou
-** Last update Wed Apr 21 23:41:51 2010 sebastien rannou
+** Last update Wed Apr 21 23:45:11 2010 sebastien rannou
 */
 
 #include <sys/types.h>
@@ -78,7 +78,7 @@ get_nb_prefix(void)
  *
  * Prefix + Link + X * (X * Words.Prefix + Words.Name + X * Words.Suffix)
  *
- * Where X is a randomom number
+ * Where X is a random number
  * Words is a chapter from the dictionnary related to the language configuration
  * Link,Prefix,Suffix are words
  *

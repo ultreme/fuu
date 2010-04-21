@@ -1,13 +1,15 @@
 {
 
     "FR": {
+
       "prefix"	: "Espece de",
       "link"	: ["de", ","],
 
       "man"	: {
             "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux",
 	    		   "grosse enflure", "hamster", "branloman", "chuck norris",
-			   "morbak", "jesus", "jedi", "haricot", "poireau"], 
+			   "morbak", "jesus", "jedi", "haricot", "poireau",
+			   "triton", "larve"], 
 	    "prefix"	: ["gros", "con de", "moche", "fils de", "ptit", 
 	    		   "bite de", "crouton de", "foutre de", "poil de",
 			   "marchand de", "suceur de", "mangeur de", 
@@ -23,7 +25,7 @@
       "woman"	: {
       	    "name"	: ["conne", "grosse autiste", "vache", "louloute", "tache",
 	    		   "punaise", "mamie", "pomme-de-terre", "moule",
-			    "raclure", "vieille ordure"],
+			    "raclure", "vieille ordure", "larve"],
 	    "prefix"	: ["grosse", "conne", "moche", "immonde", "ptite", 
 	    		   "bite de", "crouton de", "foutre de", "poil de",
 			   "marchande de", "suceuse de", "mangeuse de",
