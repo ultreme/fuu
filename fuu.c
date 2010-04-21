@@ -5,7 +5,7 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Tue Apr 20 12:53:11 2010 sebastien rannou
-** Last update Wed Apr 21 21:33:46 2010 sebastien rannou
+** Last update Wed Apr 21 23:41:51 2010 sebastien rannou
 */
 
 #include <sys/types.h>
@@ -37,16 +37,16 @@ get_nb_names(void)
 	res = 1;
 	switch (fu_main.strength) {
 	case STRENGTH_TINY:
-		res += rand() % 5;
+		res += random() % 5;
 		break;
 	case STRENGTH_MEDIUM:
-		res += rand() % 15;
+		res += random() % 15;
 		break;
 	case STRENGTH_STRONG:
-		res += rand() % 30;
+		res += random() % 30;
 		break;
 	case STRENGTH_ULTIMATE:
-		res += rand() % 60;
+		res += random() % 60;
 		break;
 	default:
 		usage();
@@ -60,7 +60,7 @@ get_nb_sufix(void)
 {
 	int		res;
 
-	res = 1 + rand() % 2;
+	res = 1 + random() % 2;
 	return res;
 }
 
@@ -69,7 +69,7 @@ get_nb_prefix(void)
 {
 	int		res;
 
-	res = 1 + rand() % 2;
+	res = 1 + random() % 2;
 	return res;
 }
 
@@ -78,7 +78,7 @@ get_nb_prefix(void)
  *
  * Prefix + Link + X * (X * Words.Prefix + Words.Name + X * Words.Suffix)
  *
- * Where X is a random number
+ * Where X is a randomom number
  * Words is a chapter from the dictionnary related to the language configuration
  * Link,Prefix,Suffix are words
  *
@@ -101,7 +101,8 @@ fuu(void)
 	fprintf(stdout, "%s ", db_get_prefix(package));
 	nb_names = get_nb_names();
 	for (i = 0; i < nb_names; ++i) {
-		fprintf(stdout, "%s ", db_get_link(package));
+		if (i != 0)
+			fprintf(stdout, "%s ", db_get_link(package));
 		nb_prefix = get_nb_prefix();
 		for (j = 0; j < nb_prefix; ++j) {
 			fprintf(stdout, "%s ", db_get_name_prefix(words));
@@ -123,7 +124,7 @@ main(int argc, char *argv[])
 	int		ch, lflag = 0, dflag = 0, sflag = 0, gflag = 0;
 
 	memset(&fu_main, 0, sizeof(fu_main));
-	srand(time(0) + getpid());
+	srandom(time(0) + getpid());
 	while ((ch = getopt(argc, argv, "g:l:d:s:")) != -1) {
 		switch (ch) {
 		case 'l':

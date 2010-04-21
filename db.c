@@ -5,11 +5,12 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Wed Apr 21 11:14:11 2010 sebastien rannou
-** Last update Wed Apr 21 11:32:41 2010 sebastien rannou
+** Last update Wed Apr 21 23:42:05 2010 sebastien rannou
 */
 
 #include <string.h>
 #include <stdlib.h>
+#include <stdio.h>
 
 #include "fuu.h"
 
@@ -56,12 +57,22 @@ db_get_words(struct json_object *package, char *gender)
 char *
 db_get_link(struct json_object * package)
 {
-	struct json_object *	prefix;
+	struct json_object *	link_array;
+	struct json_object *	link;
+	int			len, seed;
 
-	prefix = json_object_object_get(package, "link");
-	if (prefix != NULL)
-		return json_object_get_string(prefix);
-	return NULL;
+	if (json_object_get_type(package) != json_type_object)
+		return NULL;
+	if ((link_array = json_object_object_get(package, "link")) == NULL)
+		return NULL;
+
+	len = json_object_array_length(link_array);
+	seed = rand() % len;	
+
+	if ((link = json_object_array_get_idx(link_array, seed)) == NULL)
+		return NULL;
+
+	return json_object_get_string(link);
 }
 
 char *
@@ -88,7 +99,7 @@ db_get_name_prefix(struct json_object * words)
 		return NULL;
 
 	len = json_object_array_length(prefix_array);
-	seed = rand() % len;
+	seed = random() % len;
 
 	if ((prefix = json_object_array_get_idx(prefix_array, seed)) == NULL)
 		return NULL;
@@ -109,7 +120,7 @@ db_get_name_suffix(struct json_object * words)
 		return NULL;
 
 	len = json_object_array_length(suffix_array);
-	seed = rand() % len;
+	seed = random() % len;
 
 	if ((suffix = json_object_array_get_idx(suffix_array, seed)) == NULL)
 		return NULL;
@@ -130,7 +141,7 @@ db_get_name(struct json_object * words)
 		return NULL;
 
 	len = json_object_array_length(name_array);
-	seed = rand() % len;
+	seed = random() % len;
 
 	if ((name = json_object_array_get_idx(name_array, seed)) == NULL)
 		return NULL;
