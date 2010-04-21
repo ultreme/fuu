@@ -5,7 +5,7 @@
 ** Login   <mxs@epitech.net>
 ** 
 ** Started on  Tue Apr 20 12:53:11 2010 sebastien rannou
-** Last update Wed Apr 21 21:25:00 2010 sebastien rannou
+** Last update Wed Apr 21 21:33:46 2010 sebastien rannou
 */
 
 #include <sys/types.h>
@@ -124,7 +124,7 @@ main(int argc, char *argv[])
 
 	memset(&fu_main, 0, sizeof(fu_main));
 	srand(time(0) + getpid());
-	while ((ch = getopt(argc, argv, "gl:d:s:")) != -1) {
+	while ((ch = getopt(argc, argv, "g:l:d:s:")) != -1) {
 		switch (ch) {
 		case 'l':
 			lflag = 1;
