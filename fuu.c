@@ -1,12 +1,18 @@
 /*
-** main.c for insultator in /home/mxs/code/insultator
-** 
-** Made by sebastien rannou
-** Login   <mxs@epitech.net>
-** 
-** Started on  Tue Apr 20 12:53:11 2010 sebastien rannou
-** Last update Wed Apr 21 23:45:11 2010 sebastien rannou
-*/
+ * Copyright (c) 2010 Sebastien Rannou <rannou.sebastien@gmail.com>
+ *
+ * Permission to use, copy, modify, and distribute this software for any
+ * purpose with or without fee is hereby granted, provided that the above
+ * copyright notice and this permission notice appear in all copies.
+ *
+ * THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+ * WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+ * MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+ * ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+ * WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+ * ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+ * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+ */
 
 #include <sys/types.h>
 
@@ -184,8 +190,10 @@ opt_set_strength(const char *strength)
 void
 opt_set_dictionnary(char *dictionnary)
 {
-	if ((fu_main.jo_dictionnary = json_object_from_file(dictionnary)) == 0)
+	if ((fu_main.jo_dictionnary = json_object_from_file(dictionnary))
+	    == NULL) {
 		errx(1, "unable to load dictionnary %s", dictionnary);
+	}
 }
 
 void

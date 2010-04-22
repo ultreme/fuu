@@ -7,7 +7,7 @@
 
       "man"	: {
             "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux",
-	    		   "grosse enflure", "hamster", "branloman", "chuck norris",
+	    		   "hamster", "branloman", "chuck norris",
 			   "morbak", "jesus", "jedi", "haricot", "poireau",
 			   "triton", "larve"], 
 	    "prefix"	: ["gros", "con de", "moche", "fils de", "ptit", 
