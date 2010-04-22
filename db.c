@@ -21,7 +21,7 @@
 #include "fuu.h"
 
 /*
- * This file contains function providing an access to data from the JSON File.
+ * This file contains function providing an access to data from the dictionnary.
  */
 
 /*

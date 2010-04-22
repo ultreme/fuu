@@ -9,7 +9,7 @@
             "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux",
 	    		   "hamster", "branloman", "chuck norris",
 			   "morbak", "jesus", "jedi", "haricot", "poireau",
-			   "triton", "larve"], 
+			   "triton", "larve", "chnoque"], 
 	    "prefix"	: ["gros", "con de", "moche", "fils de", "ptit", 
 	    		   "bite de", "crouton de", "foutre de", "poil de",
 			   "marchand de", "suceur de", "mangeur de", 
@@ -25,7 +25,7 @@
       "woman"	: {
       	    "name"	: ["conne", "grosse autiste", "vache", "louloute", "tache",
 	    		   "punaise", "mamie", "pomme-de-terre", "moule",
-			    "raclure", "vieille ordure", "larve"],
+			    "raclure", "vieille ordure", "larve", "chnoque"],
 	    "prefix"	: ["grosse", "conne", "moche", "immonde", "ptite", 
 	    		   "bite de", "crouton de", "foutre de", "poil de",
 			   "marchande de", "suceuse de", "mangeuse de",

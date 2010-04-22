@@ -43,16 +43,16 @@ get_nb_names(void)
 	res = 1;
 	switch (fu_main.strength) {
 	case STRENGTH_TINY:
-		res += random() % 5;
+		res += random() % 3;
 		break;
 	case STRENGTH_MEDIUM:
-		res += random() % 15;
+		res += random() % 5;
 		break;
 	case STRENGTH_STRONG:
-		res += random() % 30;
+		res += random() % 10;
 		break;
 	case STRENGTH_ULTIMATE:
-		res += random() % 60;
+		res += random() % 30;
 		break;
 	default:
 		usage();
