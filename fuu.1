@@ -1,0 +1,45 @@
+.\" Copyright (c) 2010 Sebastien Rannou <rannou.sebastien@gmail.com>
+.\"
+.\" Permission to use, copy, modify, and distribute this software for any
+.\" purpose with or without fee is hereby granted, provided that the above
+.\" copyright notice and this permission notice appear in all copies.
+.\"
+.\" THE SOFTWARE IS PROVIDED "AS IS" AND THE AUTHOR DISCLAIMS ALL WARRANTIES
+.\" WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF
+.\" MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR
+.\" ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES
+.\" WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN
+.\" ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF
+.\" OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+.\"
+.Dd $Mdocdate: April 22 2010 $
+.Dt FUU 1
+.Os
+.Sh NAME
+.Nm fuu
+.Op Fl g\ gender
+.Op Fl l\ lang
+.Op Fl d\ dictionnary
+.Op Fl s\ strength
+.Sh DESCRIPTION
+The fuu utility generates one random insult from a dictionnary file.
+.Pp
+The options are as follows:
+.Bl -tag -width Ds
+.It Fl g
+Specify the gender of the insultat: "MAN" or "WOMAN".
+.It Fl l
+Specify which lang to use, currently only one lang is supported: "FR" 
+unless you use your own dictionnary.
+.It Fl d
+Dictionnary file to use.
+.It Fl s
+Strength of the insult, four strengths are supported: "TINY", "MEDIUM", 
+"STRONG", "ULTIMATE", length of the insult depends on this setting. 
+Default is "MEDIUM".
+.Sh EXAMPLES
+Generate a tiny insult for a man, using the default dictionnary:
+.Pp
+.Dl $ fuu -d man -s tiny
+.Sh BUGS
+Use with carefulness, undefined behavior when used on some people.
