@@ -6,7 +6,7 @@
       "link"	: ["de", ","],
 
       "man"	: {
-            "name"	: ["linuxien", "raton-laveur", "grumly", "lepreux",
+            "name"	: ["raton-laveur", "grumly", "lepreux",
 	    		   "hamster", "branloman", "chuck norris",
 			   "morbak", "jesus", "jedi", "haricot", "poireau",
 			   "triton", "larve", "chnoque"], 

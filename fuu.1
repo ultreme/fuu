@@ -41,5 +41,8 @@ Default is "MEDIUM".
 Generate a tiny insult for a man, using the default dictionnary:
 .Pp
 .Dl $ fuu -g man -s tiny
+Can also be coupled with espeak to produce an audio output :
+.Pp
+.Dl $ fuu fuu | espeak -v fr -s 150 -p 40 -g 10 -z 
 .Sh BUGS
 Use with carefulness, undefined behavior when used on some people.
