@@ -16,6 +16,8 @@
 
 #include <sys/types.h>
 
+#include "compat.h"
+
 #include <unistd.h>
 #include <fcntl.h>
 #include <err.h>
@@ -23,6 +25,8 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <strings.h>
+#include <getopt.h>
 
 #include "fuu.h"
 
@@ -43,16 +47,16 @@ get_nb_names(void)
 	res = 1;
 	switch (fu_main.strength) {
 	case STRENGTH_TINY:
-		res += random() % 3;
+		res += rand() % 3;
 		break;
 	case STRENGTH_MEDIUM:
-		res += random() % 5;
+		res += rand() % 5;
 		break;
 	case STRENGTH_STRONG:
-		res += random() % 10;
+		res += rand() % 10;
 		break;
 	case STRENGTH_ULTIMATE:
-		res += random() % 30;
+		res += rand() % 30;
 		break;
 	default:
 		usage();
@@ -66,7 +70,7 @@ get_nb_sufix(void)
 {
 	int		res;
 
-	res = 1 + random() % 2;
+	res = 1 + rand() % 2;
 	return res;
 }
 
@@ -75,7 +79,7 @@ get_nb_prefix(void)
 {
 	int		res;
 
-	res = 1 + random() % 2;
+	res = 1 + rand() % 2;
 	return res;
 }
 
@@ -84,7 +88,7 @@ get_nb_prefix(void)
  *
  * Prefix + Link + X * (X * Words.Prefix + Words.Name + X * Words.Suffix)
  *
- * Where X is a random number
+ * Where X is a rand number
  * Words is a chapter from the dictionnary related to the language configuration
  * Link,Prefix,Suffix are words
  *
@@ -130,7 +134,7 @@ main(int argc, char *argv[])
 	int		ch, lflag = 0, dflag = 0, sflag = 0, gflag = 0;
 
 	memset(&fu_main, 0, sizeof(fu_main));
-	srandom(time(0) + getpid());
+	srand(time(0) + getpid());
 	while ((ch = getopt(argc, argv, "g:l:d:s:")) != -1) {
 		switch (ch) {
 		case 'l':

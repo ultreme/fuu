@@ -18,7 +18,7 @@ RM	= rm -f
 CFLAGS	= -W -Wall -pedantic -ansi -Wshadow -Werror -g -I/usr/local/include
 LDFLAGS	= -L/usr/local/lib -ljson
 
-SRCS	= fuu.c db.c
+SRCS	= fuu.c db.c compat.c
 OBJS	= $(SRCS:.c=.o)
 
 all: 	$(OBJS)

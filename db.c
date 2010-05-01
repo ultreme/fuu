@@ -14,7 +14,11 @@
  * OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
-#include <string.h>
+#include <sys/types.h>
+
+#include "compat.h"
+
+#include <strings.h>
 #include <stdlib.h>
 #include <stdio.h>
 
@@ -60,7 +64,7 @@ db_get_words(struct json_object *package, char *gender)
 	return NULL;
 }
 
-char *
+const char *
 db_get_link(struct json_object * package)
 {
 	struct json_object *	link_array;
@@ -81,7 +85,7 @@ db_get_link(struct json_object * package)
 	return json_object_get_string(link);
 }
 
-char *
+const char *
 db_get_prefix(struct json_object * package)
 {
 	struct json_object *	prefix;
@@ -92,7 +96,7 @@ db_get_prefix(struct json_object * package)
 	return NULL;
 }
 
-char *
+const char *
 db_get_name_prefix(struct json_object * words)
 {
 	struct json_object *	prefix_array;
@@ -105,7 +109,7 @@ db_get_name_prefix(struct json_object * words)
 		return NULL;
 
 	len = json_object_array_length(prefix_array);
-	seed = random() % len;
+	seed = rand() % len;
 
 	if ((prefix = json_object_array_get_idx(prefix_array, seed)) == NULL)
 		return NULL;
@@ -113,7 +117,7 @@ db_get_name_prefix(struct json_object * words)
 	return json_object_get_string(prefix);
 }
 
-char *
+const char *
 db_get_name_suffix(struct json_object * words)
 {
 	struct json_object *	suffix_array;
@@ -126,7 +130,7 @@ db_get_name_suffix(struct json_object * words)
 		return NULL;
 
 	len = json_object_array_length(suffix_array);
-	seed = random() % len;
+	seed = rand() % len;
 
 	if ((suffix = json_object_array_get_idx(suffix_array, seed)) == NULL)
 		return NULL;
@@ -134,7 +138,7 @@ db_get_name_suffix(struct json_object * words)
 	return json_object_get_string(suffix);
 }
 
-char *
+const char *
 db_get_name(struct json_object * words)
 {
 	struct json_object *	name_array;
@@ -147,7 +151,7 @@ db_get_name(struct json_object * words)
 		return NULL;
 
 	len = json_object_array_length(name_array);
-	seed = random() % len;
+	seed = rand() % len;
 
 	if ((name = json_object_array_get_idx(name_array, seed)) == NULL)
 		return NULL;
