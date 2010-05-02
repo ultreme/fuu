@@ -30,7 +30,9 @@ Following libraries are required to build cfuu:
 
 ### Standart use
 $ fuu
+
 Espèce de moche haricot bleu de nazareth de ptit poil de branloman obèse de moche buveur de chnoque néandertalien bleu de buveur de morbak infecte
+
 $
 
 ### Insult someone (Unexpected result)
