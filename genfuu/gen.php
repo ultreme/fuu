@@ -53,11 +53,11 @@ function	step_1()
   $db = new SQLiteDatabase(DB_FILE);
 
   return $db->query("CREATE TABLE fuu ("
-		    . "			 id AUTOINCREMENT INTEGER(4) PRIMARY KEY,"
+		    . "			 id INTEGER PRIMARY KEY,"
 		    . "			 insult TEXT,"
 		    . "			 audio_file CHAR(255),"
-		    . "			 nb_view INTEGER(4),"
-		    . "			 nb_play INTEGER(4)"
+		    . "			 nb_view INTEGER,"
+		    . "			 nb_play INTEGER"
 		    . "	   );");
 }
 
