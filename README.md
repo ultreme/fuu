@@ -5,7 +5,7 @@ fuu
 
 fuu is composed of three parts :
 
-  * cfuu: c program that generate random text insults
+  * cfuu: c program that generates random text insults
   * genfuu: php script that generates X insults, in text and audio
   * webfuu: a web page which displays a random insult plus its audio
 
@@ -28,12 +28,11 @@ Following libraries are required to build cfuu:
 
 ## Examples
 
-### Standart use
-$ fuu
+### French insult
 
 Espèce de moche haricot bleu de nazareth de ptit poil de branloman obèse de moche buveur de chnoque néandertalien bleu de buveur de morbak infecte
 
-$
+## Usages
 
 ### Insult someone (Unexpected result)
 $ fuu | mail xxx@xx.xx
