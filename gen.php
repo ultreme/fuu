@@ -33,7 +33,7 @@ if(php_sapi_name() !== 'cli') {
 
 // Customs
 define('DB_FILE', 'fuu.db');			// sqlite path to the database to be created
-define('DATA_DIR', 'data');			// directory where to store
+define('DATA_DIR', 'insults');			// directory where to store
 define('FUU_PATH', './fuu');			// path to fuu executable
 define('INSULT_NUMBER', 1024);			// number of insults to generate
 
@@ -56,7 +56,8 @@ function	step_1()
 		    . "			 id AUTOINCREMENT INTEGER(4) PRIMARY KEY,"
 		    . "			 insult TEXT,"
 		    . "			 audio_file CHAR(255),"
-		    . "			 nb_views INTEGER(4)"
+		    . "			 nb_view INTEGER(4),"
+		    . "			 nb_play INTEGER(4)"
 		    . "	   );");
 }
 
@@ -110,9 +111,9 @@ function	step_4()
     `lame -h $output_path $output_path_mp3  --resample 11,025`;
     unlink($output_path);
 
-    $q = "INSERT INTO fuu(insult, audio_file)"
+    $q = "INSERT INTO fuu(insult, audio_file, nb_view, nb_play)"
       . "             VALUES('" . addslashes($insult) . "',"
-      . "		     '" . addslashes($output_path_mp3) . "'"
+      . "		     '" . addslashes($output_path_mp3) . "', 0, 0"
       . ");";
 
     sqlite_exec($db, $q);

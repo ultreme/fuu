@@ -2,13 +2,13 @@
 
     "FR": {
 
-      "prefix"	: "Espece de",
+      "prefix"	: "Espèce de",
       "link"	: ["de", ","],
 
       "man"	: {
-            "name"	: ["raton-laveur", "grumly", "lepreux",
+            "name"	: ["raton-laveur", "grumly", "lépreux",
 	    		   "hamster", "branloman", "chuck norris",
-			   "morbak", "jesus", "jedi", "haricot", "poireau",
+			   "morbak", "jésus", "jedi", "haricot", "poireau",
 			   "triton", "larve", "chnoque"], 
 	    "prefix"	: ["gros", "con de", "moche", "fils de", "ptit", 
 	    		   "bite de", "crouton de", "foutre de", "poil de",
@@ -17,9 +17,9 @@
 			   "rongeur de", "voleur de"],
 	    "suffix"	: ["vert", "orange", "communiste", "capitaliste", 
 	    		   "immonde", "gaulliste", "jaune", "bleu", "marron",
-			   "sale", "obese", "infecte", "poilu", "puant", 
-			   "vegetarien", "pederaste", "vegetatif", 
-			   "neandertalien", "de nazareth"]
+			   "sale", "obèse", "infecte", "poilu", "puant", 
+			   "végétarien", "pédéraste", "végétatif", 
+			   "néandertalien", "de nazareth"]
       },
 
       "woman"	: {
