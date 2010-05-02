@@ -28,18 +28,18 @@ Following libraries are required to build cfuu:
 
 ## Examples
 
-# Standart use
+### Standart use
 $ fuu
 Espèce de moche haricot bleu de nazareth de ptit poil de branloman obèse de moche buveur de chnoque néandertalien bleu de buveur de morbak infecte
 $
 
-# Insult someone (Unexpected result)
+### Insult someone (Unexpected result)
 $ fuu | mail xxx@xx.xx
 
-# Need sound?
+### Need sound?
 $ fuu | espeak -v fr -s 150 -p 40 -g 10 -z 
 
-# License
+## License
 Copyright (c) 2010 Sebastien Rannou <rannou.sebastien@gmail.com>
 
 Permission to use, copy, modify, and distribute this software for any
