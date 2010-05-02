@@ -1,1 +1,34 @@
-fuu, yet another insult generator.
+fuu
+======
+
+## yet another insult generator.
+
+fuu is composed of three parts :
+
+  * cfuu: c program that generate random text insults
+  * genfuu: php script that generates X insults, in text and audio
+  * webfuu: a web page which displays a random insult plus its audio
+
+## Features
+
+  * multi-language
+  * random insults (size, words, ...)
+  * web interface
+  * support of french insults
+
+## Todo
+
+  * support more languages :-)
+
+## Examples
+
+# Standart use
+$ fuu
+Espèce de moche haricot bleu de nazareth de ptit poil de branloman obèse de moche buveur de chnoque néandertalien bleu de buveur de morbak infecte
+$
+
+# Insult someone (Unexpected result)
+$ fuu | mail xxx@xx.xx
+
+# Need sound?
+$ fuu | espeak -v fr -s 150 -p 40 -g 10 -z 
