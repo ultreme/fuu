@@ -23,11 +23,13 @@ strlcpy(char * dst, const char * src, size_t size)
 {
 	size_t	i;
 
+	if (size == 0)
+		return 0;
+
 	for (i = 0; src[i] != '\0' && i < (size - 1); ++i) {
 		dst[i] = src[i];
 	}
-	if (i < size)
-		dst[i] = '\0';
+	dst[i] = '\0';
 
 	return i;
 }
